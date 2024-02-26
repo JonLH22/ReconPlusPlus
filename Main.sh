@@ -53,6 +53,7 @@ function httpprobe {
     cat $subdomain_path/found.txt | grep $domain | sort -u  | httpprobe -prefer-https | grep https | sed 's/https\?:\///' | tee -a $subdomain_path/alive.txt 
 }
 httpprobe
+
 #gowitness function
 function gowitness {
     sudo apt-get install gowitness -y
@@ -60,6 +61,7 @@ function gowitness {
     gowitness file -f $subdomain_path/alive.txt -P $screenshot_path/ --no-http
 }
 gowitness
+
 #nmap function 
 function nmap {
     echo -e "${RED} [+] Running nmap on alive subdomains ... ${RESET}"
