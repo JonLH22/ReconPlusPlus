@@ -68,3 +68,10 @@ function nmap {
     nmap -iL $subdomain_path/alive.txt -T4 -A -p- -oN $scan_path/nmap.txt
 }
 nmap
+
+#nikto function
+function nikto {
+    echo -e"${RED} [+] Running nikto on alive subdomains ...${RESET}"
+    nikto -h $subdomain_path/alive.txt $scan_path/nikto.txt
+}
+nikto
