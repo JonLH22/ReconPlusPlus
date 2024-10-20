@@ -8,3 +8,14 @@ It creates several folders for the target website and the screenshots/info you g
 Hope this helps and happy hunting! :)
 
 Shoutout to TCM/Heath. 
+
+Current programs added to the script:
+
+- Subfinder
+- Assetfinder
+- Amass
+- Httpprobe
+- Gowitness
+- Nmap
+- Nikto
+
