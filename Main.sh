@@ -27,7 +27,7 @@ fi
 #nslookup
 function nslookup {
     echo -e "${RED} [+] Performing nslookup ... ${RESET}"
-    nslookup -d $domain > $subdomai_path/found.txt
+    nslookup -d $domain > $subdomain_path/found.txt
 }
 nslookup
 #Subfinder function
