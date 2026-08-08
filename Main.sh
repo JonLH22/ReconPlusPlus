@@ -24,7 +24,12 @@ if [ ! -d "$scan_path" ]; then
     mkdir $domain 
 fi 
 
-
+#nslookup
+function nslookup {
+    echo -e "${RED} [+] Performing nslookup ... ${RESET}"
+    nslookup -d $domain > $subdomai_path/found.txt
+}
+nslookup
 #Subfinder function
 function subfinder {
     echo -e "${RED} [+] Launching subfinder ... ${RESET}"
