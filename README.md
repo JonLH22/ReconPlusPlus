@@ -18,4 +18,5 @@ Current programs added to the script:
 - Gowitness
 - Nmap
 - Nikto
-
+- nslookup
+more to come...
